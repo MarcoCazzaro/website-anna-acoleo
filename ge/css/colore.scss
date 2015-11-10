@@ -1,0 +1,358 @@
+//colors
+$white: #fff;
+$alabaster: #fafafa;
+$color_gallery_approx: #eee;
+$color_crater_brown_approx: #442222;
+$red: #f00;
+$color_red_berry_approx: #800;
+$col_titolo_articolo_rep: #f00;
+$black: #000;
+$color_storm_dust_10_approx: rgba(100, 100, 100, 0.1);
+$color_woodsmoke_approx: #111111;
+$color_log_cabin_approx: #222222;
+$color_alto_approx: #ddd;
+$color_wild_sand_approx: #f5f5f5;
+$color_pink_10_approx: rgba(250, 200, 200, 0.1);
+$color_pink_50_approx: rgba(250, 200, 200, 0.5);
+$color_crescendo: #f6d600;
+
+//fonts
+$font_0: fontcorpo;
+$font_1: euphemia;
+$font_2: Courier;
+$font_3: fonttitoli;
+$font_4: intro;
+$font_5: sans-serif;
+
+//@extend-elements
+//original selectors
+//html, body
+%extend_1 {
+	font-family: $font_0, $font_1, $font_2;
+	font-size: 14px;
+	font-weight: lighter;
+	background: $alabaster;
+	color: $color_gallery_approx;
+}
+
+
+html {
+	@extend %extend_1;
+}
+body {
+	@extend %extend_1;
+}
+strong {
+	font-size: 1.5em;
+}
+a {
+	&:link {
+		color: $color_gallery_approx;
+	}
+	&:visited {
+		color: $color_gallery_approx;
+	}
+}
+.CLSdescrizionepagina {
+	opacity: 0.1;
+}
+.CLScontenitoresfondi {
+	background-color: $color_crater_brown_approx;
+}
+.CLSmenumouseenter {
+	color: $red;
+	background-color: $color_red_berry_approx;
+}
+.CLSmenuattivo {
+	background-color: $red;
+}
+.CLStestata {
+	font-size: 2em;
+}
+.CLSsfondotestata {
+	background-color: $black;
+	opacity: 0.8;
+}
+.CLSscrittatestata {
+	font-family: $font_3, $font_4, $font_5;
+}
+.CLSlinkpulsantemenu {
+	font-size: 0.7em;
+}
+.CLSnavigazionereppulsante {
+	a {
+		color: $black;
+	}
+}
+.CLSlinkpulsantemenurep {
+	font-size: 2em;	
+}
+.CLSnavigazionerepertoriofissa {
+	background-color: $black;
+	color: $white;
+	opacity: 0.8;	
+	a {
+		color: $white;
+	}
+}
+.CLSdivcorpo {
+	color: $black;
+	background-color: $color_gallery_approx;
+	text-align: justify;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: -6px -6px 2px -3px $color_storm_dust_10_approx;
+}
+.CLSfootersito {
+	color: $color_gallery_approx;
+	font-size: 1.5em;
+}
+.CLSfootercliente {
+	color: $white;
+	border-top: 1px solid $white;
+	font-size: 1.5em;
+}
+.CLStitolooperasfondo {
+	font-size: 1.5em;
+}
+.CLStitolooperasfondo1 {
+	font-size: 2em;
+	color: $color_gallery_approx;
+}
+.CLStitolooperasfondo2 {
+	color: $white;
+}
+article {	
+	color: $white;
+	h2 {
+		color: $color_woodsmoke_approx;
+		font-size: 1.3em;
+		font-weight: normal;
+		text-decoration: none;
+	}
+	h3 {
+		color: $color_log_cabin_approx;
+		font-size: 0.8em;
+		font-weight: normal;
+	}
+	h4 {
+		color: $col_titolo_articolo_rep;
+	}
+}
+.CLSsfondocolorato {
+	background-color: $color_crescendo;
+}
+.CLScontenitoresezioniampio {
+	background-color: $alabaster;
+}
+.CLSsfondocontenitoresezioni {
+	background-color: $alabaster;
+	opacity: 0.9;
+}
+.CLSfontnewspiccolo {
+	font-size: 0.8em;
+}
+.CLSsezionecorpo {
+	font-size: 1.3em;
+}
+.CLSbioelenco {
+	background-color: $white;
+}
+.CLSbiosezione {
+	text-align: justify;
+	font-size: 0.8em;
+}
+.CLScorpobiosezione {
+	background-color: $white;
+}
+.CLSesposizionibiosezione {
+	background-color: $white;
+}
+.CLSpremibiosezione {
+	background-color: $white;
+}
+.CLSsfondobiomezzo {
+	color: $white;
+}
+.CLSsezioneinallestimento {
+	background-color: $white;
+	text-align: center;
+	opacity: 0.9;
+}
+.CLSsezionecontatti {
+	text-align: center;
+}
+.CLSsfondosezionecontatti {
+	background-color: $white;
+	opacity: 0.9;
+}
+.CLSdescrizioneevento {
+	font-size: 0.7em;
+}
+.CLSdettaglievento {
+	font-size: 0.7em;
+	background-color: $alabaster;
+	text-align: left;
+}
+.CLScontenitoresezionimouseenter {
+	background-color: $alabaster;
+}
+.CLSsezionedescrizione {
+	font-size: 0.8em;
+}
+.CLSsezionedescrizionesolotesto {
+	font-size: 0.8em;
+}
+.CLSslideshowdettagliarticolo {
+	background-color: $color_crater_brown_approx;
+}
+.CLSslideshowtitolosezione {
+	font-size: 2em;
+}
+.CLSslideshowtitoloarticolo {
+	font-size: 1.3em;
+}
+.CLSslideshowdescrizionearticolo {
+	font-size: 0.9em;
+}
+.CLSsegnapostosfondi {
+	border: 2px solid $color_alto_approx;
+}
+.CLSsegnapostosfondiattivo {
+	background-color: $color_alto_approx;
+}
+.CLSslideshowfreccia {
+	font-size: 3em;
+	text-decoration: none;
+	background-color: $white;
+	opacity: 0.8;
+}
+.CLSslideshowtitolosezionemenu {
+	background-color: $color_alto_approx;
+}
+.CLSevidenziafooter {
+	background-color: $color_crater_brown_approx;
+}
+.CLSlenteingrandimento {
+	background-color: $alabaster;
+	border: 1px solid $color_alto_approx;
+}
+.CLSevidenziapulsantelente {
+	background-color: $color_crater_brown_approx;
+}
+.CLSpulsantelenteattivo {
+	background-color: $color_alto_approx;
+}
+.CLSpowered {
+	color: $black;
+	text-height: 25px;
+	text-align: center;
+	a {
+		color: $color_gallery_approx;
+		text-decoration: none;
+	}
+}
+.CLSevidenziapulsantenow {
+	color: $black;
+	background-color: $color_crater_brown_approx;
+}
+.CLSfootertecnico {
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 0.8em;
+	opacity: 1;
+}
+.CLScontenitoreinfocookies {
+	background-color: $alabaster;
+}
+.CLScorpoinfocookies {
+	text-align: justify;
+}
+.CLSlingua {
+	opacity: 0.5;
+}
+.CLSlinguamedia {
+	opacity: 1;
+}
+.CLSlinguaattiva {
+	opacity: 1;
+}
+.CLSarticolotesto {
+	color: $black;
+	background-color: $white;
+}
+.CLSarticoloreptesto {
+	text-align: left;
+}
+.CLSsfondoarticolorep {
+	background-color: $black;
+	opacity: 0.7;
+}
+.CLSsfondoarticolorepevidenziato {
+	opacity: 0.9;
+}
+.CLSarticolorec {
+	color: $black;
+	background-color: $white;		
+	font-size: 1.4em;
+	footer {		
+		color: $white;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+.CLScrescendo {
+	.CLScrescendotesto {
+		color: $black;
+		font-size: 1.2em;
+	}
+	.CLScrescendocitazione {
+		color: $white;
+		background-color: $color_red_berry_approx;
+		font-weight: bold;
+		font-size: 1.5em;
+		opacity: 0.9;
+	}
+}
+.CLSarticolocon {
+	color: $black;		
+	font-size: 1.5em;
+	a {
+		color: $color_red_berry_approx;
+	}
+}
+
+@media only screen and(min-width:768px) {
+	html {
+		font-size: 16px;
+	}
+	body {
+		font-size: 16px;
+	}
+	.CLScrescendo {
+		.CLScrescendotesto {
+			font-size: 1.5em;
+		}
+		.CLScrescendocitazione {
+			text-align: right;
+		}
+	}
+}
+@media only screen and(min-width:1024px) {
+	html {
+		font-size: 18px;
+	}
+	body {
+		font-size: 18px;
+	}
+	.CLSscrittatestata {
+		text-align: left;
+	}
+	.CLSscrittatestatainiziale {
+		font-size: 2.5em;
+	}
+}
+.CLSinfocookies a {
+	text-decoration: none;
+	color: $black;
+}
