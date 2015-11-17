@@ -2,6 +2,7 @@
 $white: #fff;
 $color_red_berry_approx: #800;
 $color_gallery_approx: #eee;
+$color_crescendo: #f6d600;
 
 //urls
 $url_0: url(../images/sfondo/01.jpg);
@@ -74,7 +75,6 @@ $url_quattromani_b: url(../images/quattromani_b.png);
 $url_duepiano_b: url(../images/duepiano_b.png);
 $url_pianocello_b: url(../images/pianocello_b.png);
 $url_iconapdf: url(../images/iconapdf.png);
-$url_crescendosfondo: url(../images/crescendo/crescendosfondo.png);
 $url_crescendo1: url(../images/crescendo/DSCF2118.JPG);
 $url_crescendo2: url(../images/crescendo/IMG00254-20121126-1032.jpg);
 $url_crescendo3: url(../images/crescendo/SAGGIO5.JPG);
@@ -563,19 +563,19 @@ article {
 		height: 300px;
 	}
 	.CLScrescendosfondo1 {
-		background: $color_gallery_approx $url_crescendo1 no-repeat center center;
+		background: $color_crescendo $url_crescendo1 no-repeat center center;
 		background-size: cover;
 	}
 	.CLScrescendosfondo2 {
-		background: $color_gallery_approx $url_crescendo2 no-repeat center center;
+		background: $color_crescendo $url_crescendo2 no-repeat center center;
 		background-size: cover;
 	}
 	.CLScrescendosfondo3 {
-		background: $color_gallery_approx $url_crescendo3 no-repeat center center;
+		background: $color_crescendo $url_crescendo3 no-repeat center center;
 		background-size: cover;
 	}
 	.CLScrescendosfondo4 {
-		background: $color_gallery_approx $url_crescendo4 no-repeat center center;
+		background: $color_crescendo $url_crescendo4 no-repeat center center;
 		background-size: cover;
 	}
 	.CLScrescendocitazione {
